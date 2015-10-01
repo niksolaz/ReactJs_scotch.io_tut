@@ -1,5 +1,14 @@
-/** @jsx React.DOM */
-React.render(
-  React.DOM.h1(<helloworld />,null, 'Hello, world!'),
-  document.getElementById('container')
-);
+/*var MyComponents = React.createClass({
+          render: function(){
+            return (
+
+                    <h1>Welcome {this.props.name}!</h1>
+            );
+          }
+      });
+
+      React.render(
+          <div>
+                <MyComponents name="Nik Solaz" />
+          </div>,
+          document.getElementById('content'));*/
