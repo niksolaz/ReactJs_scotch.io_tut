@@ -1,17 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <script src="build/react.js"></script>
-    <script src="build/JSXTransformer.js"></script>
+    <meta charset="UTF-8">
+    <title>Tutorial one</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/JSXTransformer.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   </head>
-  <body>
-    <div id="mount-point"></div>
+  <body style="background: silver">
+    <div id="content"></div>
+    <div>
+        <textarea row="4" col="50"></textarea>
+        <br/>
+        <input type="submit" style="background-color: blue; color: white" value="Click Me" href="#">
+    </div>
     <script type="text/jsx">
-      /** @jsx React.DOM */
+
+      var MyComponents = React.createClass({
+          render: function(){
+            return (
+
+                    <h1>Welcome {this.props.name}!</h1>
+            );
+          }
+      });
+
       React.render(
-          <h1>Hello, world!</h1>,
-          document.getElementById('myDiv')
-      );
-</script>
+          <div>
+                <MyComponents name="Nik Solaz" />
+          </div>,
+          document.getElementById('content'));
+    </script>
   </body>
 </html>
