@@ -11,25 +11,8 @@
     <div id="content"></div>
     <div>
         <textarea row="4" col="50"></textarea>
-        <br/>
-        <input type="submit" style="background-color: blue; color: white" value="Click Me" href="#">
     </div>
     <script type="text/jsx" src="index.jsx">
-
-      var MyComponents = React.createClass({
-          render: function(){
-            return (
-
-                    <h1>Welcome {this.props.name}!</h1>
-            );
-          }
-      });
-
-      React.render(
-          <div>
-                <MyComponents name="Nik Solaz" />
-          </div>,
-          document.getElementById('content'));
     </script>
   </body>
 </html>
