@@ -1,8 +1,7 @@
 var MyComponents = React.createClass({
 
           doSomething: function(){
-              
-            
+          
           },
 
           render: function(){
@@ -24,9 +23,9 @@ React.render(
           <MyComponents name="Nik Solaz" />
       </div>
       <div>
-          <MyComponents social="Facebook"></MyComponents>
-          <MyComponents social="Twitter"></MyComponents>
-          <MyComponents social="GooglePlus"></MyComponents>
+          <MyComponents social="Facebook"><a href="http://www.facebook.com"><a></MyComponents>
+          <MyComponents social="Twitter"><a href="http://www.twitter.com"><a></MyComponents>
+          <MyComponents social="GooglePlus"><a href="http://www.googleplus.com"><a></MyComponents>
       </div>
     </div>,
     document.getElementById('content'));
