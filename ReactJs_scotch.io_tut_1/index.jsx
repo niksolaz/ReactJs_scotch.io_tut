@@ -1,16 +1,14 @@
 var MyComponents = React.createClass({
 
           doSomething: function(){
-            return(
-                  <button>{this.props.children}</button>
-            );
+            <button>{this.props.children}</button>
           },
 
           render: function(){
             return (
                     <div>
-                          <h1>Welcome {this.props.name}!</h1>
-                          <a onClick={this.doSomething}>{this.props.social}</a>
+                          <h1>{this.props.name}</h1>
+                          <input type="button" id="myBtn" onClick={this.doSomething}>{this.props.social}</input>
                           
                     </div>
                     
