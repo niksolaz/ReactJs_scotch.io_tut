@@ -10,9 +10,10 @@ var NameOfHeader = React.createClass({
 var ButtonSocial = React.createClass({
     render: function(){
       return (
-            <input type="submit" value="Send to">
-            <a  href={this.props.site}>{this.props.social}</a>
-            </input>
+            <button type="submit" href={this.props.site}>
+            {this.props.social}
+            </button>
+            
       );
     }
 });
@@ -21,6 +22,8 @@ React.render(
     <div>
     <NameOfHeader name="Nik Solaz" />
     <ButtonSocial social="Facebook" site="http://www.facebook.com" />
+    <ButtonSocial social="Twitter" site="http://www.twitter.com" />
+    <ButtonSocial social="Google Plus" site="http://www.googleplus.com" />
     </div>,
     document.getElementById('content'));
 
