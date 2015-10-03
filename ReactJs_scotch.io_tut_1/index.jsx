@@ -12,7 +12,7 @@ var MyComponents = React.createClass({
             return (
                     <div>
                           <h1>{this.props.name}</h1>
-                          <input type="submit"><a onClick={this.doSomething}>{this.props.social}</a></input>
+                          <input type="submit"><a onClick={this.doSomething}>Send to this {this.props.social}</a></input>
                           
                     </div>
                     
@@ -25,6 +25,7 @@ React.render(
     <div>
       <div>
           <MyComponents name="Nik Solaz" />
+          <p>all social</p>
       </div>
       <div>
           <MyComponents social="Facebook"><a href="http://www.facebook.com"></a></MyComponents>
